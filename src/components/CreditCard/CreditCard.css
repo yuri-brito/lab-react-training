@@ -1,0 +1,25 @@
+.creditCard{
+    margin: 1%;
+    width:30%;
+    border-radius: 5px;
+    padding-bottom: 2%;
+}
+.creditCard img{
+    width:14%;
+    margin: 6%;
+    margin-bottom: 2%;
+}
+.creditCard article{
+    text-align: right;
+}
+.creditCard h2{
+    margin: 3%;
+    font-weight: 400;
+}
+.creditCard p{
+    text-align: left;
+    margin: 0;
+    margin-left: 10%;
+    font-size: 88%;
+
+}

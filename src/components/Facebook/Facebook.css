@@ -1,0 +1,27 @@
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.buttons button{
+    margin: 1px;
+}
+.face{
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 1%;
+}
+
+.pface{
+    text-align: left;
+    padding-left: 1%;
+}
+.face img:hover{
+    cursor: pointer;
+}
+.pface p{
+    margin: 0;
+}

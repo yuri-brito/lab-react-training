@@ -1,0 +1,14 @@
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2%
+}
+.carousel button{
+    background-color: white;
+    border:0
+}
+.carousel button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
