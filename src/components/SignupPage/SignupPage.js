@@ -6,7 +6,6 @@ function SignupPage(){
     const [emailValid,setEmailValid]=useState(false)
     const [emailInvalid,setEmailInvalid]=useState(false)
     function validarEmail(e){
-        console.log(e)
         let email = e.target.value
         if (email===''){
             setEmailValid(false)
@@ -25,7 +24,6 @@ function SignupPage(){
     const [passValid,setPassValid]=useState(false)
     const [passInvalid,setPassInvalid]=useState(false)
     function validarPass(e){
-        console.log(e)
         let pass = e.target.value
         if (pass===''){
             setPassValid(false)
@@ -43,7 +41,18 @@ function SignupPage(){
 
     function subForm(e){
         e.preventDefault();
-        console.log(e.target.children)
+        let email=e.target.children[0].children[1].value
+        let lang=e.target.children[2].children[1].value
+        let div=e.target.children[4]
+
+        if (lang==='German'){
+            div.innerHTML=`<p>Hallo</p><p>Your email is: ${email}</p><p>Your email address is correct</p>`
+        }else if (lang==='French'){
+            div.innerHTML=`<p>Bonjour</p><p>Your email is: ${email}</p><p>Your email address is correct</p>`
+        }else{
+            div.innerHTML=`<p>Hello</p><p>Your email is: ${email}</p><p>Your email address is correct</p>`
+        }
+        console.log(e.target.children[4])
 
 
     }
