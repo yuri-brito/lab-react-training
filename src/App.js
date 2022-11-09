@@ -14,6 +14,8 @@ import Carousel from './components/Carousel/Carousel'
 import NumbersTable from './components/NumbersTable/NumbersTable'
 import Facebook from './components/Facebook/Facebook'
 import SignupPage from './components/SignupPage/SignupPage'
+import RBGColorPicker from './components/RGBColorPicker/RGBColorPicker';
+
 
 function App() {
   return (
@@ -64,6 +66,7 @@ function App() {
       <NumbersTable limit={12} />
       <Facebook/>
       <SignupPage/>
+      <RBGColorPicker/>
     </div>
     
 
